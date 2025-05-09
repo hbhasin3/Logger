@@ -22,7 +22,7 @@ enum LogEvent: String {
     case severe = "[🔥]"
 }
 
-class Log {
+public class Log {
     /// Logging date format
     static let dateFormat = "yyyy-MM-dd hh:mm:ssSSS"
     fileprivate static var dateFormatter: DateFormatter {
