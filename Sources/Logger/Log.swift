@@ -125,7 +125,7 @@ public class Log {
     /// - Parameters:
     ///     - response  : The `HTTPURLResponse` for which API hit is done
     ///     - data           : The `Data` for which API hit is done
-    static func log<T: Decodable>(Type: T.Type, response: HTTPURLResponse?, data: Data?, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+    public static func log<T: Decodable>(Type: T.Type, response: HTTPURLResponse?, data: Data?, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
         print("\n - - - - - - - - - - RESPONSE - - - - - - - - - - \n")
         defer { print("\n - - - - - - - - - -  END - - - - - - - - - - \n") }
         
